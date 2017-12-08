@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   # GET /users
   def index
-    @users = User.all
+    @users = User.where(search_params)
   end
 
   # POST /users
