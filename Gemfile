@@ -47,3 +47,4 @@ gem 'rb-readline', "~> 0.5.0.pre.1", :require => false
 
 gem 'sidekiq'
 gem 'faraday'
+gem "factory_bot_rails", "~> 4.0"
