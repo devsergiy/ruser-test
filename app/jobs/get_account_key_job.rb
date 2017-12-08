@@ -2,7 +2,7 @@ class GetAccountKeyJob < ApplicationJob
   queue_as :default
   retry_on ::AccountKeyServiceError
 
-  KEY_SERVICE_HOST = 'https://account-key-service.herokuapp.com'
+  KEY_SERVICE_HOST = 'https://INVALID_URL.com'
   ACCOUNT_ENDPOINT = '/v1/account'
 
   def perform(user)
