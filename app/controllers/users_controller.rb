@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   # GET /users
   def index
-    @users = User.where(search_params)
+    @users = User.where(search_params).order(created_at: :desc)
   end
 
   # POST /users
