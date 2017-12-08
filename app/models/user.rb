@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  has_secure_password
+
   validates_uniqueness_of :email, :phone_number, :key, :account_key
   validates_presence_of :email, :phone_number, :password
 
